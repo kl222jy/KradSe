@@ -1,5 +1,4 @@
-Projektskelett HT13
+Webbplats Krad Solutions
 ==================
 
-Ett tomt projekt som forkas för de som gör projekt i kursen. Kursen webbplats:
-https://coursepress.lnu.se/kurs/webbteknisk-introduktion/
+Förslag till utbyte av krad.se
