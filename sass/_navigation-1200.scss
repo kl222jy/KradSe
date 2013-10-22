@@ -1,0 +1,26 @@
+nav
+{
+    float: right;
+}
+nav a
+{
+    display: block;
+    float: right;
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #000;
+    width: 100px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    margin-top: 3px;
+    transition-duration: 0.3s;
+}
+.current
+{
+    background-color: #abf;
+}
+nav a:hover
+{
+    width: 150px;
+}

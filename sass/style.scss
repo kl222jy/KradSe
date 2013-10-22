@@ -1,3 +1,4 @@
+@import '_normalize.scss';
 @import '_reset.scss';
 @import '_helper.scss';
 
@@ -5,15 +6,30 @@
 @import '_color.scss';
 @import '_typography.scss';
 
-/* dela upp annorlunda? alla olika storlekar i fil och sedan navigation, button, form osv..? */
-
 /* layout */
-@import '_base.scss';
-@import '_640.scss';
-@import '_720.scss';
-@import '_1080.scss';
+@import '_layout.scss';
+@media screen and (min-width: 900px)
+{
+    @import '_layout-900up.scss';
+}
 
+
+@import '_header.scss';
+
+@media screen and (max-width: 1199px)
+{
+    @import '_navigation-320.scss';
+}
+
+@media screen and (min-width: 1200px)
+{
+    @import '_navigation-1200.scss';
+}
+
+@import '_footer.scss';
 
 /* /custom */
-
-@import '_print.scss';
+@media print 
+{
+    @import '_print.scss';
+}

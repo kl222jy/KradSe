@@ -15,7 +15,7 @@ projektstruktur färdig, vävt in html5boilerplate css i sass(dock inte normaliz
 
 #####v43
 ######mån:
-1-2h förlust pga c9 fel. projektstruktur uppdaterad, sidstruktur på god väg.
+projektstruktur uppdaterad, sidstruktur på god väg, påbörjat arbete med stilmallar     (dålig synk mot c9 hela dagen, samt 1-2h förlust vid fel)
 ######tis:
 ######ons:
 ######tors:
@@ -43,7 +43,7 @@ Upphittat:
 * http://gantter.com/             gantt
 
 Kommandon att lägga på minnet:
-sass --watch sass : css style --style compressed
+sass --watch sass:css --style compressed
              input:output               nested
                                         expanded
                                         compact
