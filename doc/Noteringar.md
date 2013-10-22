@@ -1,5 +1,10 @@
 #Egna Noteringar
 favicon och apple-touch-icon kommer inte att fungera förrän filerna hamnat på krad.se (utelämnat länkningen till filerna)
+krad logo vertikalt i vänsterkanten?
+färgklick i form av någon bakgrundsgrafik i nedre höger hörn?
+perspektivändring vid scroll på acko.net effektfull
+font-size 0 eller annan lösning behövs för att komma undan problem med whitespace till all layout
+koden för gallery-popup väldigt onödigt avancerad och tung.. köra någon annorlunda lösning? (http://dimsemenov.com/plugins/magnific-popup/documentation.html)
 
 
 ####Vad som faktiskt hänt:

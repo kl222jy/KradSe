@@ -1,17 +1,19 @@
 nav
 {
-    float: right;
+    position: absolute;
+    right: 0;
+    z-index: 2;
 }
 nav a
 {
-    display: block;
     float: right;
+    display: block;
     background-color: #fff;
     border-radius: 10px 0 0 10px;
-    border: 1px solid #000;
-    width: 100px;
+    border: 2px solid #000;
     text-decoration: none;
     color: #000;
+    width: 100px;
     padding: 10px;
     margin-top: 3px;
     transition-duration: 0.3s;

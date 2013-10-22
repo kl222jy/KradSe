@@ -1,0 +1,13 @@
+.single
+{
+    width: 49%;
+    min-width: 320px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#site-header, main, footer
+{
+    max-width: 1200px;
+    margin: auto;
+}
