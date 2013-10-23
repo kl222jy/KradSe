@@ -30,13 +30,34 @@
     @import '_navigation-1400.scss';
 }
 
+@import '_gallery.scss';
+
+
 @import '_footer.scss';
 
-
+@import '_events.scss';
 @import '_magnific-popup.scss';
 
 /* /custom */
 @media print 
 {
     @import '_print.scss';
+}
+
+/* detaljstyrning */
+@media screen and (min-width: 900px) and (max-width: 1000px)
+{
+    .align-left
+    {
+        float: none;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .align-left
+    {
+        float: none;
+        display: block;
+    }
 }

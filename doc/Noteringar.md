@@ -6,6 +6,22 @@ perspektivändring vid scroll på acko.net effektfull
 font-size 0 eller annan lösning behövs för att komma undan problem med whitespace till all layout
 koden för gallery-popup väldigt onödigt avancerad och tung.. köra någon annorlunda lösning? (http://dimsemenov.com/plugins/magnific-popup/documentation.html)
 
+effekten av jquery för page transition blev inte särskilt bra.. blir en lätt blinkande effekt eftersom sidan laddat färdigt innan effekten körs
+
+köra ren js samt en css klass för att snabba upp det och kunna ha det tidigare i laddningen kanske fungerar
+
+window.onload = function(e){
+    document.getElementById('main').className = 'in';
+}
+
+window.onbeforeunload = function(e){
+    document.getElementById('main').className = 'out';
+}
+
+setTimeout
+
+ev. enbart out, effekt: fade och skjut ut åt sidan EXPERIMENTERA!
+absolut max 500ms, troligen 250ms
 
 ####Vad som faktiskt hänt:
 #####v42
@@ -22,6 +38,7 @@ projektstruktur färdig, vävt in html5boilerplate css i sass(dock inte normaliz
 ######mån:
 projektstruktur uppdaterad, sidstruktur på god väg, påbörjat arbete med stilmallar     (dålig synk mot c9 hela dagen, samt 1-2h förlust vid fel)
 ######tis:
+arbetat vidare med stilmallar och innehåll, lagt till magnificent-popup för galleri, experimenterat en del med js/jquery utan önskvärt resultat
 ######ons:
 ######tors:
 ######fre:
@@ -46,6 +63,10 @@ projektstruktur uppdaterad, sidstruktur på god väg, påbörjat arbete med stil
 Upphittat:
 * http://www.tomsplanner.com/     gantt
 * http://gantter.com/             gantt
+* http://dimsemenov.com/plugins/magnific-popup/documentation.html
+* http://stackoverflow.com/questions/18873574/css-transition-property-on-page-exit
+* http://www.onextrapixel.com/2010/02/23/how-to-use-jquery-to-make-slick-page-transitions/
+
 
 Kommandon att lägga på minnet:
 sass --watch sass:css --style compressed

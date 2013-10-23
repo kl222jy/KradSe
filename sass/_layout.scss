@@ -14,3 +14,29 @@ main
     float: left;
     padding: 5px;
 }
+
+img
+{
+    max-width: 100%;
+}
+
+article:before, article:after 
+{
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+article:after 
+{
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+article 
+{
+    *zoom: 1;
+}

@@ -610,6 +610,9 @@ textarea {
   *zoom: 1; }
 
 /* custom */
+html {
+  background-color: #272727; }
+
 body {
   background-color: #272727; }
 
@@ -630,8 +633,27 @@ main {
   float: left;
   padding: 5px; }
 
+img {
+  max-width: 100%; }
+
+article:before, article:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+article:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+article {
+  *zoom: 1; }
+
 @media screen and (min-width: 900px) {
-  .single {
+  .column {
     width: 49%;
     min-width: 320px;
     display: inline-block;
@@ -639,7 +661,12 @@ main {
 
   #site-header, main, footer {
     max-width: 1200px;
-    margin: auto; } }
+    margin: auto; }
+
+  .test {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2; } }
 @media screen and (min-width: 1400px) {
   #site-header {
     padding-top: 0;
@@ -693,7 +720,7 @@ h1 {
     float: right;
     display: block;
     background-color: #fff;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
     border: 2px solid #000;
     text-decoration: none;
     color: #000;
@@ -707,6 +734,23 @@ h1 {
 
   nav a:hover {
     width: 150px; } }
+.portfolio-gallery ul {
+  padding: 0;
+  list-style: none; }
+
+.portfolio-gallery li {
+  display: inline-block;
+  padding: 10px; }
+
+.portfolio-gallery article section {
+  min-width: 300px; }
+
+@media screen and (min-width: 950px) {
+  .portfolio-gallery li {
+    width: 30%; } }
+@media screen and (min-width: 400px) and (max-width: 949px) {
+  .portfolio-gallery li {
+    width: 40%; } }
 footer {
   display: block;
   background-color: #222;
@@ -715,6 +759,29 @@ footer {
   margin-top: 10px;
   border-radius: 10px;
   padding: 10px; }
+
+.in {
+  transition-duration: 0.5s;
+  -webkit-transform: translateX(0);
+  -webkit-transform: slideandfadein; }
+
+@-webkit-keyframes slideandfadein {
+  from {
+    -webkit-transform: translateX(100%);
+    opacity: 0; }
+
+  to {
+    -webkit-transform: translateX(0);
+    opacity: 1; } }
+
+@-webkit-keyframes slideandfadeout {
+  from {
+    -webkit-transform: translateX(0);
+    opacity: 1; }
+
+  to {
+    -webkit-transform: translateX(100%);
+    opacity: 0; } }
 
 /* Magnific Popup CSS */
 .mfp-bg {
@@ -1171,3 +1238,12 @@ img.mfp-img {
   h2,
   h3 {
     page-break-after: avoid; } }
+/* detaljstyrning */
+@media screen and (min-width: 900px) and (max-width: 1000px) {
+  .align-left {
+    float: none;
+    display: block; } }
+@media screen and (max-width: 600px) {
+  .align-left {
+    float: none;
+    display: block; } }

@@ -1,0 +1,36 @@
+.portfolio-gallery
+{
+}
+
+.portfolio-gallery ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+.portfolio-gallery li
+{
+    display: inline-block;
+    padding: 10px;
+}
+
+.portfolio-gallery article section
+{
+    min-width: 300px;
+}
+
+@media screen and (min-width: 950px)
+{
+    .portfolio-gallery li
+    {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 949px)
+{
+    .portfolio-gallery li
+    {
+        width: 40%;
+    }
+}

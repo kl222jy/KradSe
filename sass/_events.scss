@@ -1,0 +1,30 @@
+.in
+{
+    transition-duration: 0.5s;
+    -webkit-transform: translateX(0);
+    -webkit-transform: slideandfadein;
+}
+@-webkit-keyframes slideandfadein{
+    from
+    {
+        -webkit-transform: translateX(100%);
+        opacity: 0;
+    }
+    to
+    {
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes slideandfadeout{
+    from
+    {
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+    to
+    {
+        -webkit-transform: translateX(100%);
+        opacity: 0;
+    }
+}

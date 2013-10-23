@@ -24,3 +24,10 @@ $('.portfolio-gallery').magnificPopup({
         easing: 'ease-in-out', // CSS transition easing function 
     }
 });
+
+window.onbeforeunload = function(e){
+    setTimeout(exit(), 500);
+};
+function exit(e){
+    document.getElementById('main').className = 'out';
+}
