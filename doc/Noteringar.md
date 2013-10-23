@@ -5,6 +5,7 @@ färgklick i form av någon bakgrundsgrafik i nedre höger hörn?
 perspektivändring vid scroll på acko.net effektfull
 font-size 0 eller annan lösning behövs för att komma undan problem med whitespace till all layout
 koden för gallery-popup väldigt onödigt avancerad och tung.. köra någon annorlunda lösning? (http://dimsemenov.com/plugins/magnific-popup/documentation.html)
+ensidesapplikation gömmer ju gärna innehåll.. risk för svartlistning?
 
 effekten av jquery för page transition blev inte särskilt bra.. blir en lätt blinkande effekt eftersom sidan laddat färdigt innan effekten körs
 
@@ -22,6 +23,11 @@ setTimeout
 
 ev. enbart out, effekt: fade och skjut ut åt sidan EXPERIMENTERA!
 absolut max 500ms, troligen 250ms
+
+##Anmärkningar på kod
+* kravet på att sidan ska se ok ut utan css kräver divar i formuläret, hade gärna tagit bort dem, alternativt kan <br /> användas men det känns ännu mer fel.
+** Tog bort div elementen, det ser någorlunda ok utan
+* dålig funktionalitet och stöd för css3 columns gör att <div class="column"> fått användas på alla sidor
 
 ####Vad som faktiskt hänt:
 #####v42
@@ -67,6 +73,7 @@ Upphittat:
 * http://stackoverflow.com/questions/18873574/css-transition-property-on-page-exit
 * http://www.onextrapixel.com/2010/02/23/how-to-use-jquery-to-make-slick-page-transitions/
 
+semantic.gs
 
 Kommandon att lägga på minnet:
 sass --watch sass:css --style compressed

@@ -1,0 +1,48 @@
+label, input, textarea, button
+{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+input, textarea, button
+{
+    margin-bottom: 5px;
+    padding: 5px;
+}
+textarea
+{
+    height: 200px;
+}
+fieldset
+{
+    border: 1px solid #000;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+legend
+{
+    text-align: right;
+    margin-right: 50px;
+}
+button
+{
+    border: 0;
+    border-top: 1px solid #ffffff;
+    background-color: #333;
+    border-radius: 10px;
+    color: #fff;
+}
+button:hover
+{
+    background-color: #555;
+}
+
+input:focus:invalid, textarea:focus:invalid
+{
+    border: 2px solid red;
+}
+
+input:focus:valid, textarea:focus:valid
+{
+    border: 2px solid green;
+}

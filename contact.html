@@ -31,59 +31,57 @@
         </nav>
 
         <main>
-            <article>
+            <article class="column">
                 <header>
-                    <h2>Kontakta oss</h2>
+                <h2>Kontakta oss</h2>
                 </header>
-                <div class="column">
-                    <section>
+                <section>
                     <p>Om ni har frågor eller funderingar; tveka inte att kontakta oss.</p>
-                        <section>
-                            <form>
-                            <div>
-                                <label>Namn: </label>
-                                <input type="text" />
-                            </div>
-                            <div>
-                                <label>E-post: </label>
-                                <input type="text" />
-                            </div>
-                            <div>
-                                <label>Ämne: </label>
-                                <input type="text" />
-                            </div>
-                            <div>
-                                <label>Meddelande: </label>
-                                <textarea></textarea>
-                            </div>
-                                <input type="submit" value="skicka" />
-                            </form>
-                        </section>
-                    </section>
-                </div>
-                <div class="column">
-                    <section itemscope itemtype="http://schema.org/Corporation">
-                        <adress itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <div itemprop="name">Krad Solutions</div>
-                            <div itemprop="streetAddress">Björkhällsvägen 16</div>
-                            <div itemprop="postalCode">24336</div>
-                            <div itemprop="addressLocality">Höör</div>
-                            <div itemprop="email">info@krad.se</div>
-                        </adress>
-                        <section itemprop="founder" itemscope itemtype="http://schema.org/Person">
-                            <span itemprop="givenName">Kristoffer</span>
-                            <span itemprop="familyName">Lind</span>
-                            <div itemprop="telephone">0709649688</div>
-                            <div itemprop="email">kristoffer@krad.se</div>
-                        </section>
-                        <section itemprop="founder" itemscope itemtype="http://schema.org/Person">
-                            <span itemprop="givenName">Dan</span>
-                            <span itemprop="familyName">Jarl</span>
-                            <div itemprop="telephone">0738179667</div>
-                            <div itemprop="email">dan@krad.se</div>
-                        </section>
-                    </section>
-                </div>
+                    <form role="form">
+                        <fieldset>
+                            <legend>Meddelande</legend>
+                            <label for="contactInputName">Namn: </label>
+                            <input id="contactInputName" placeholder="Skriv in ditt namn" type="text" required pattern="[a-zA-Z0-9]+" />
+
+                            <label for="contactInputMail">E-post: </label>
+                            <input type="email" id="contactInputMail" placeholder="Skriv in din e-post" required />
+
+                            <label for="contactInputSubject">Ämne: </label>
+                            <input type="text" id="contactInputSubject" placeholder="Skriv in ämne" required pattern="[a-zA-Z0-9]+" />
+
+                            <label for="contactInputMessage">Meddelande: </label>
+                            <textarea id="contactInputMessage" required pattern="[a-zA-Z0-9]+"></textarea>
+
+                            <button type="submit">Skicka</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </article>
+            <article class="column" itemscope itemtype="http://schema.org/Corporation">
+                <header>
+                    <h2>Kontaktinformation</h2>
+                </header>
+                <section>
+                    <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <div itemprop="name">Krad Solutions</div>
+                        <div itemprop="streetAddress">Björkhällsvägen 16</div>
+                        <div itemprop="postalCode">24336</div>
+                        <div itemprop="addressLocality">Höör</div>
+                        <div itemprop="email">info@krad.se</div>
+                    </address>
+                    <address itemprop="founder" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="givenName">Kristoffer</span>
+                        <span itemprop="familyName">Lind</span>
+                        <div itemprop="telephone">0709649688</div>
+                        <div itemprop="email">kristoffer@krad.se</div>
+                    </address>
+                    <address itemprop="founder" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="givenName">Dan</span>
+                        <span itemprop="familyName">Jarl</span>
+                        <div itemprop="telephone">0738179667</div>
+                        <div itemprop="email">dan@krad.se</div>
+                    </address>
+                </section>
             </article>
         </main>
         

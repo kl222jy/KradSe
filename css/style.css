@@ -609,6 +609,15 @@ textarea {
 .clearfix {
   *zoom: 1; }
 
+body {
+  width: 100%;
+  *zoom: 1; }
+  body:before, body:after {
+    content: "";
+    display: table; }
+  body:after {
+    clear: both; }
+
 /* custom */
 html {
   background-color: #272727; }
@@ -652,12 +661,16 @@ article:after {
 article {
   *zoom: 1; }
 
+address {
+  margin-bottom: 40px; }
+
 @media screen and (min-width: 900px) {
   .column {
-    width: 49%;
+    width: 47%;
     min-width: 320px;
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    margin: 10px; }
 
   #site-header, main, footer {
     max-width: 1200px;
@@ -751,6 +764,43 @@ h1 {
 @media screen and (min-width: 400px) and (max-width: 949px) {
   .portfolio-gallery li {
     width: 40%; } }
+label, input, textarea, button {
+  display: block;
+  width: 90%;
+  margin: auto; }
+
+input, textarea, button {
+  margin-bottom: 5px;
+  padding: 5px; }
+
+textarea {
+  height: 200px; }
+
+fieldset {
+  border: 1px solid #000;
+  max-width: 450px;
+  margin-bottom: 20px; }
+
+legend {
+  text-align: right;
+  margin-right: 50px; }
+
+button {
+  border: 0;
+  border-top: 1px solid #ffffff;
+  background-color: #333;
+  border-radius: 10px;
+  color: #fff; }
+
+button:hover {
+  background-color: #555; }
+
+input:focus:invalid, textarea:focus:invalid {
+  border: 2px solid red; }
+
+input:focus:valid, textarea:focus:valid {
+  border: 2px solid green; }
+
 footer {
   display: block;
   background-color: #222;
@@ -1178,6 +1228,18 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+.persondescription dl {
+  display: inline-block; }
+
+.persondescription dt {
+  font-weight: 1000;
+  float: left;
+  clear: left; }
+
+.persondescription dd {
+  margin: 0;
+  float: left; }
 
 /* /custom */
 @media print {

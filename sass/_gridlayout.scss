@@ -1,0 +1,50 @@
+main
+{
+    @include column(12);
+}
+
+#container
+{
+    max-width: 1200px;
+}
+
+#site-header
+{
+    padding-top: 9%;
+}
+.align-left
+{
+    float: left;
+    padding: 5px;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+address
+{
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 900px)
+{
+    .column 
+    { 
+        @include column(6);
+    }
+    #site-header, main, footer
+    {
+        @include column(12);
+    }
+}
+
+@media screen and (min-width: 1400px)
+{
+    #site-header
+    {
+        padding-top: 0;
+        height: 125px;
+    }
+}

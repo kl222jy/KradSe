@@ -15,3 +15,15 @@ $(document).ready(function() {
         window.location = linkLocation;
     }
 });
+
+
+
+
+window.onload = function(e){
+    document.getElementById('main').className = 'in';
+}
+
+window.addEventListener("load", function(e){
+document.getElementById('main').className = 'in';
+
+})
