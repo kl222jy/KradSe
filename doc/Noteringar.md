@@ -46,6 +46,8 @@ projektstruktur uppdaterad, sidstruktur på god väg, påbörjat arbete med stil
 ######tis:
 arbetat vidare med stilmallar och innehåll, lagt till magnificent-popup för galleri, experimenterat en del med js/jquery utan önskvärt resultat
 ######ons:
+about.html och contact.html färdiga, stilmall för forms ordnad, projektet är nu i grova drag redo för redovisning, kompabilitet kontrollerat med alla nyaste versioner av webbläsare(en liten fix behövdes för att få det att fungera i ie)
+implementerat och fått layout att fungera med semantic.gs, håller dock förmodligen mig till nuvarande implementation för att slippa justera alla detaljer, dock helt klart något jag kommer att använda mig av i många framtida projekt.
 ######tors:
 ######fre:
 ######lör:
