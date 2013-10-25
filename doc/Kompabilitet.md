@@ -7,3 +7,7 @@ Misstänker att det är betydligt fler av dessa webbläsare där menyn för 1400
 
 ie6, 7 och 8 som skulle behöva lösas.. på dessa är det bakgrundsfärgen som måste ordnas.
 trodde modernizr skulle lösa grundläggande saker på de nya html5 elementen..
+
+anledningen till att det inte fungerar är att modernizr inte lyckas få <main> att omsluta de element det innehåller..
+main fanns inte med i modernizr, lade till det själv och nu är sidan åtminstone brukbar med ie7 och ie8
+nöjer mig där tills vidare och lägger helt enkelt meddelandet om utdaterad browser för samtliga med mindre än ie9

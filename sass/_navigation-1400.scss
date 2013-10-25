@@ -1,10 +1,10 @@
-nav
+#mainMenu
 {
     position: absolute;
     right: 0;
     z-index: 2;
 }
-nav a
+#mainMenu a
 {
     float: right;
     clear: right;
@@ -23,7 +23,7 @@ nav a
 {
     background-color: #abf;
 }
-nav a:hover
+#mainMenu a:hover
 {
     width: 150px;
 }

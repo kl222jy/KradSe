@@ -21,13 +21,6 @@ $('.portfolio-gallery').magnificPopup({
         enabled: true, // By default it's false, so don't forget to enable it
     
         duration: 300, // duration of the effect, in milliseconds
-        easing: 'ease-in-out', // CSS transition easing function 
+        easing: 'ease-in-out' // CSS transition easing function 
     }
 });
-
-window.onbeforeunload = function(e){
-    setTimeout(exit(), 500);
-};
-function exit(e){
-    document.getElementById('main').className = 'out';
-}
