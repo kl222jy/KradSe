@@ -13,7 +13,13 @@ Jag fick idén om att göra om en befintlig webbplats i princip direkt när jag 
 Webbplatsen behöver en total genomgång; innehåll behöver skrivas om, ingen kod kommer behållas och även bildmaterial är i behov av en del arbete.
 
 ## Tekniker
-Produktionen kommer att göras med html5 och css3, utgå ifrån mobile first, ha en responsiv design och tanken är att nyttja html5boilerplate mobile samt experimentera med sass.
+* HTML5
+* CSS3
+* Html5Boilerplate
+* Sass
+* Magnific-popup
+* Modernizr
+* Respond.js
 
 ## Begränsningar
 Kontaktformuläret kommer bara få riktig funktionalitet i mån av tid. Jag tänkte också experimentera en del under det här projektet varför en lösning som är godkänd skarpt kanske inte hinner ordnas inom tidsramen för projektet.

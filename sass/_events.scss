@@ -1,13 +1,19 @@
 .in
 {
-    transition-duration: 0.5s;
-    -webkit-transform: translateX(0);
-    -webkit-transform: slideandfadein;
+    animation: slideandfadein 0.25s;
+    -webkit-animation: slideandfadein 0.25s;
 }
+
+.out
+{
+    animation: slideandfadein 0.25s;
+    -webkit-animation: slideandfadeout 0.25s;
+}
+
 @-webkit-keyframes slideandfadein{
     from
     {
-        -webkit-transform: translateX(100%);
+        -webkit-transform: translateX(1000px);
         opacity: 0;
     }
     to
@@ -24,7 +30,32 @@
     }
     to
     {
-        -webkit-transform: translateX(100%);
+        -webkit-transform: translateX(1000px);
+        opacity: 0;
+    }
+}
+@keyframes slideandfadein{
+    from
+    {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    to
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideandfadeout{
+    from
+    {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to
+    {
+        
+        transform: translateX(1000px);
         opacity: 0;
     }
 }

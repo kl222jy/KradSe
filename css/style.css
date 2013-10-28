@@ -629,6 +629,20 @@ body {
   background-color: #fff; }
 
 /* layout */
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background: url("../img/bg1.svg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#container {
+  min-height: 100%; }
+
 main {
   margin: 0 auto;
   border-radius: 25px;
@@ -741,9 +755,10 @@ h1 {
     width: 100px;
     padding: 10px;
     margin-top: 3px;
-    transition-duration: 0.3s; }
+    transition-duration: 0.3s;
+    font-weight: 900; }
 
-  .current {
+  #mainMenu .current {
     background-color: #abf; }
 
   #mainMenu a:hover {
@@ -812,13 +827,16 @@ footer {
   padding: 10px; }
 
 .in {
-  transition-duration: 0.5s;
-  -webkit-transform: translateX(0);
-  -webkit-transform: slideandfadein; }
+  animation: slideandfadein 0.25s;
+  -webkit-animation: slideandfadein 0.25s; }
+
+.out {
+  animation: slideandfadein 0.25s;
+  -webkit-animation: slideandfadeout 0.25s; }
 
 @-webkit-keyframes slideandfadein {
   from {
-    -webkit-transform: translateX(100%);
+    -webkit-transform: translateX(1000px);
     opacity: 0; }
 
   to {
@@ -831,7 +849,25 @@ footer {
     opacity: 1; }
 
   to {
-    -webkit-transform: translateX(100%);
+    -webkit-transform: translateX(1000px);
+    opacity: 0; } }
+
+@keyframes slideandfadein {
+  from {
+    transform: translateX(1000px);
+    opacity: 0; }
+
+  to {
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes slideandfadeout {
+  from {
+    transform: translateX(0);
+    opacity: 1; }
+
+  to {
+    transform: translateX(1000px);
     opacity: 0; } }
 
 /* Magnific Popup CSS */

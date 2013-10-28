@@ -11,3 +11,7 @@ trodde modernizr skulle lösa grundläggande saker på de nya html5 elementen..
 anledningen till att det inte fungerar är att modernizr inte lyckas få <main> att omsluta de element det innehåller..
 main fanns inte med i modernizr, lade till det själv och nu är sidan åtminstone brukbar med ie7 och ie8
 nöjer mig där tills vidare och lägger helt enkelt meddelandet om utdaterad browser för samtliga med mindre än ie9
+
+
+mkt av resterande problem beror på att jag använder mig av max-width ganska frikostigt och ev. att mediaqueries inte fungerar
+menyn borde ses över en aning, annars är det brukbart
