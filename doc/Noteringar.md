@@ -29,12 +29,17 @@ ev. enbart out, effekt: fade och skjut ut åt sidan EXPERIMENTERA!
 absolut max 500ms, troligen 250ms
 
 ##Tillgänglighet
+markeringen för aktuell sida fungerar inte i ajax implementationen
 behov av bättre markering av aktivt objekt vid användning av tangentbordet
 fade effekt på markeringen för rätt/fel på formuläret(så att den inte lyser rött direkt när man markerat för att börja skriva)
 e-post adresser till länkar
 lägga till knappar för ändring av typsnittsstorlek(borde det inte duga med webbläsarens ctrl +/- egentligen?)
 aaa - ändra färg på text/bakgrundsfärg
 se över title på sidorna
+se över språktaggar
+förkortningar? hover med beskrivning
+role?
+
 
 
 ##Anmärkningar på kod
@@ -72,8 +77,9 @@ fått history och ajaxify att fungera med okomprimerad version av history, klass
 tagit bort ajax effekten på galleri och bilder, gjort och lagt till en bakgrundsbild
 #####v44
 ######mån:
-
+Läst igenom wcag och sett över vad som behöver ändras, försökt lösa problemet med flyttandet av klassen current i menyn vid sidbyte
 ######tis:
+Löst problemet med visning av aktiv sida.
 ######ons:
 ######tors:
 ######fre:
