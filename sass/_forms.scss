@@ -9,6 +9,10 @@ input, textarea, button
     margin-bottom: 5px;
     padding: 5px;
 }
+input, textarea
+{
+    transition: 1s;
+}
 textarea
 {
     height: 200px;

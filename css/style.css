@@ -762,6 +762,9 @@ h1 {
     background-color: #abf; }
 
   #mainMenu a:hover {
+    width: 150px; }
+
+  #mainMenu a:focus {
     width: 150px; } }
 .portfolio-gallery ul {
   padding: 0;
@@ -788,6 +791,9 @@ label, input, textarea, button {
 input, textarea, button {
   margin-bottom: 5px;
   padding: 5px; }
+
+input, textarea {
+  transition: 1s; }
 
 textarea {
   height: 200px; }

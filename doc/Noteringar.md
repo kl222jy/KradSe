@@ -13,6 +13,7 @@ möjligen bör history bytas ut till att stödja enbart webbläsare med html5, e
 frågan är också om det är något fel i den komprimerade versionen av history eftersom det fungerar med den okomprimerade versionen.
 komprimerade versionen av enbart html5 fungerade inte heller, skiftat till okomprimerad html för history.js
 innehållet är i behov av en hel del arbete samt ev. byta till semantic.gs ändå.. vad göra sen?
+sätta mått på bilder?
 
 
 window.onload = function(e){
@@ -29,15 +30,16 @@ ev. enbart out, effekt: fade och skjut ut åt sidan EXPERIMENTERA!
 absolut max 500ms, troligen 250ms
 
 ##Tillgänglighet
-markeringen för aktuell sida fungerar inte i ajax implementationen
-behov av bättre markering av aktivt objekt vid användning av tangentbordet
-fade effekt på markeringen för rätt/fel på formuläret(så att den inte lyser rött direkt när man markerat för att börja skriva)
-e-post adresser till länkar
+x-markeringen för aktuell sida fungerar inte i ajax implementationen
+x-behov av bättre markering av aktivt objekt vid användning av tangentbordet
+x-fade effekt på markeringen för rätt/fel på formuläret(så att den inte lyser rött direkt när man markerat för att börja skriva)
+x-pattern för namn blir fel om man skriver mer än ett namn
+x-e-post adresser till länkar
+x-se över title på sidorna
+x-se över språktaggar
+x-förkortningar? hover med beskrivning
 lägga till knappar för ändring av typsnittsstorlek(borde det inte duga med webbläsarens ctrl +/- egentligen?)
 aaa - ändra färg på text/bakgrundsfärg
-se över title på sidorna
-se över språktaggar
-förkortningar? hover med beskrivning
 role?
 
 
