@@ -9,9 +9,9 @@
 
 /* layout */
 
-//@import '_gridlayout.scss';
+@import '_grid-layout.scss';
 
-
+/*
 @import '_layout.scss';
 @media screen and (min-width: 900px)
 {
@@ -21,11 +21,12 @@
 {
     @import '_layout-1400.scss';
 }
-
+*/
 
 @import '_header.scss';
+@import '_grid-navigation.scss';
 
-
+/*
 @media screen and (max-width: 1399px)
 {
     @import '_navigation-320.scss';
@@ -35,6 +36,7 @@
 {
     @import '_navigation-1400.scss';
 }
+*/
 
 @import '_gallery.scss';
 @import '_forms.scss';

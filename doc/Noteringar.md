@@ -12,8 +12,9 @@ med allt detta experimenterande finns det viss risk för att webbplatsen blir v�
 möjligen bör history bytas ut till att stödja enbart webbläsare med html5, effekten är inte värd de dåliga urlerna.. ev. går det att modifiera koden eller göra någon url rewrite i htaccess
 frågan är också om det är något fel i den komprimerade versionen av history eftersom det fungerar med den okomprimerade versionen.
 komprimerade versionen av enbart html5 fungerade inte heller, skiftat till okomprimerad html för history.js
-innehållet är i behov av en hel del arbete samt ev. byta till semantic.gs ändå.. vad göra sen?
+innehållet är i behov av en hel del arbete samt ev. byta till semantic.gs ändå..
 sätta mått på bilder?
+magnific popup används inte förrän vid andra anropet..
 
 
 window.onload = function(e){
@@ -81,8 +82,9 @@ tagit bort ajax effekten på galleri och bilder, gjort och lagt till en bakgrund
 ######mån:
 Läst igenom wcag och sett över vad som behöver ändras, försökt lösa problemet med flyttandet av klassen current i menyn vid sidbyte
 ######tis:
-Löst problemet med visning av aktiv sida.
+Löst problemet med visning av aktiv sida, gått igenom listan med tillgänglighetsproblem 
 ######ons:
+bearbetat innehåll och konverterat layout till semantic.gs
 ######tors:
 ######fre:
 ######lör:

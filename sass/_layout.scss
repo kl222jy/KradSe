@@ -2,14 +2,18 @@ html
 {
     height: 100%;
 }
-body
+//bakgrunden gör sidan otydlig vid stående visning
+@media screen and (min-width: 321px)
 {
-    height: 100%;
-    background: url('../img/bg1.svg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    body
+    {
+        height: 100%;
+        background: url('../img/bg1.svg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 #container
 {

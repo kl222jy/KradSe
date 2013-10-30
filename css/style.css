@@ -632,22 +632,27 @@ body {
 html {
   height: 100%; }
 
-body {
-  height: 100%;
-  background: url("../img/bg1.svg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
+@media screen and (min-width: 321px) {
+  body {
+    height: 100%;
+    background: url("../img/bg1.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
 #container {
   min-height: 100%; }
 
 main {
-  margin: 0 auto;
-  border-radius: 25px;
-  padding: 10px;
-  width: 90%; }
+  display: inline;
+  float: left;
+  width: 98.33333%;
+  margin: 0 0.83333%;
+  border-radius: 25px; }
+
+#container {
+  max-width: 1200px;
+  margin: auto; }
 
 #site-header {
   padding-top: 9%; }
@@ -659,45 +664,61 @@ main {
 img {
   max-width: 100%; }
 
-article:before, article:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-article:after {
-  clear: both; }
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-article {
-  *zoom: 1; }
-
 address {
   margin-bottom: 40px; }
 
+@media screen and (max-width: 899px) {
+  article {
+    clear: left;
+    padding: 10px; } }
 @media screen and (min-width: 900px) {
-  .column {
-    width: 47%;
-    min-width: 320px;
-    display: inline-block;
-    vertical-align: top;
-    margin: 10px; }
+  section.porfolio-gallery {
+    display: inline;
+    float: left;
+    width: 98.33333%;
+    margin: 0 0.83333%; }
+
+  main > article {
+    display: inline;
+    float: left;
+    width: 48.33333%;
+    margin: 0 0.83333%; }
+
+  .portfolio-gallery article {
+    display: inline;
+    float: left;
+    width: 48.33333%;
+    margin: 0 0.83333%; }
 
   #site-header, main, footer {
-    max-width: 1200px;
-    margin: auto; }
+    display: inline;
+    float: left;
+    width: 98.33333%;
+    margin: 0 0.83333%; }
 
-  .test {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2; } }
+  #products, #descriptions, #about-company, #about-members {
+    display: inline;
+    float: left;
+    width: 48.33333%;
+    margin: 0 0.83333%; }
+
+  .persondescription {
+    clear: left; } }
 @media screen and (min-width: 1400px) {
   #site-header {
     padding-top: 0;
     height: 125px; } }
+/*
+@import '_layout.scss';
+@media screen and (min-width: 900px)
+{
+    @import '_layout-900.scss';
+}
+@media screen and (min-width: 1400px)
+{
+    @import '_layout-1400.scss';
+}
+*/
 #site-header {
   background-image: url("../img/header.png");
   background-repeat: no-repeat;
@@ -709,28 +730,31 @@ h1 {
 
 @media screen and (max-width: 1399px) {
   #mainMenu {
-    width: 100%;
-    background-color: #000; }
+    display: inline;
+    float: left;
+    width: 98.33333%;
+    margin: 0 0.83333%;
+    font-size: 0;
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
   #mainMenu ul {
-    width: 80%;
-    min-width: 320px;
-    max-width: 1200px;
-    padding: 0;
-    margin: 10px auto; }
+    background-color: #000;
+    margin: 0;
+    padding: 0; }
 
   #mainMenu li {
     display: inline; }
 
   #mainMenu a {
-    width: 300px;
-    max-width: 19%;
+    width: 20%;
     display: inline-block;
     color: #fff;
     padding: 10px 0;
     margin: 0;
     text-decoration: none;
-    text-align: center; }
+    text-align: center;
+    font-size: 16px; }
 
   #mainMenu a:hover {
     background-color: #333; }
@@ -741,7 +765,10 @@ h1 {
   #mainMenu {
     position: absolute;
     right: 0;
-    z-index: 2; }
+    z-index: 2;
+    margin-top: 5%;
+    padding: 0;
+    margin-right: 0; }
 
   #mainMenu a {
     float: right;
@@ -750,6 +777,7 @@ h1 {
     background-color: #fff;
     border-radius: 20px 0 0 20px;
     border: 2px solid #000;
+    border-right: 0;
     text-decoration: none;
     color: #000;
     width: 100px;
@@ -766,6 +794,17 @@ h1 {
 
   #mainMenu a:focus {
     width: 150px; } }
+/*
+@media screen and (max-width: 1399px)
+{
+    @import '_navigation-320.scss';
+}
+
+@media screen and (min-width: 1400px)
+{
+    @import '_navigation-1400.scss';
+}
+*/
 .portfolio-gallery ul {
   padding: 0;
   list-style: none; }
@@ -830,7 +869,8 @@ footer {
   text-align: right;
   margin-top: 10px;
   border-radius: 10px;
-  padding: 10px; }
+  padding: 10px 0;
+  margin-right: 100px; }
 
 .in {
   animation: slideandfadein 0.25s;
@@ -1273,7 +1313,8 @@ img.mfp-img {
   padding-top: 0; }
 
 .persondescription dl {
-  display: inline-block; }
+  display: inline-block;
+  margin: 0; }
 
 .persondescription dt {
   font-weight: 1000;

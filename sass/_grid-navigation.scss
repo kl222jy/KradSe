@@ -1,0 +1,81 @@
+@media screen and (max-width: 1399px)
+{
+    #mainMenu
+    {
+        @include column(12);
+        font-size: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #mainMenu ul
+    {
+        background-color: #000;
+        margin: 0;
+        padding: 0;
+    }
+    #mainMenu li
+    {
+        display: inline;
+    }
+    #mainMenu a
+    {
+        width: 20%;
+        display: inline-block;
+        color: #fff;
+        padding: 10px 0;
+        margin: 0;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+    }
+    #mainMenu a:hover
+    {
+        background-color: #333;
+    }
+    .current
+    {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+@media screen and (min-width: 1400px)
+{
+    #mainMenu
+    {
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        margin-top: 5%;
+        padding: 0;
+        margin-right: 0;
+    }
+    #mainMenu a
+    {
+        float: right;
+        clear: right;
+        display: block;
+        background-color: #fff;
+        border-radius: 20px 0 0 20px;
+        border: 2px solid #000;
+        border-right: 0;
+        text-decoration: none;
+        color: #000;
+        width: 100px;
+        padding: 10px;
+        margin-top: 3px;
+        transition-duration: 0.3s;
+        font-weight: 900;
+    }
+    #mainMenu .current
+    {
+        background-color: #abf;
+    }
+    #mainMenu a:hover
+    {
+        width: 150px;
+    }
+    #mainMenu a:focus
+    {
+        width: 150px;
+    }
+}

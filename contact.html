@@ -33,7 +33,7 @@
         </nav>
 
         <main id="mainContent">
-            <article class="column">
+            <article>
                 <header>
                 <h2>Kontakta oss</h2>
                 </header>
@@ -43,13 +43,13 @@
                         <fieldset>
                             <legend>Meddelande</legend>
                             <label for="contactInputName">Namn: </label>
-                            <input id="contactInputName" placeholder="Skriv in ditt namn" type="text" required pattern="[a-zA-Z0-9 ]+" />
+                            <input id="contactInputName" placeholder="Skriv in ditt namn" type="text" required pattern="[a-zåäöA-ZÅÄÖ0-9 ]+" />
 
                             <label for="contactInputMail">E-post: </label>
                             <input type="email" id="contactInputMail" placeholder="Skriv in din e-post" required />
 
                             <label for="contactInputSubject">Ämne: </label>
-                            <input type="text" id="contactInputSubject" placeholder="Skriv in ämne" required pattern="[a-zA-Z0-9 ]+" />
+                            <input type="text" id="contactInputSubject" placeholder="Skriv in ämne" required pattern="[a-zåäöA-ZÅÄÖ0-9 ]+" />
 
                             <label for="contactInputMessage">Meddelande: </label>
                             <textarea id="contactInputMessage" required></textarea>
@@ -59,7 +59,7 @@
                     </form>
                 </section>
             </article>
-            <article class="column" itemscope itemtype="http://schema.org/Corporation">
+            <article itemscope itemtype="http://schema.org/Corporation">
                 <header>
                     <h2>Kontaktinformation</h2>
                 </header>

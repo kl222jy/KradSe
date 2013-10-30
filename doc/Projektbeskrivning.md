@@ -19,7 +19,9 @@ Webbplatsen behöver en total genomgång; innehåll behöver skrivas om, ingen k
 * Sass
 * Magnific-popup
 * Modernizr
-* Respond.js
+* Respond
+* History
+* Ajaxify
 
 ## Begränsningar
 Kontaktformuläret kommer bara få riktig funktionalitet i mån av tid. Jag tänkte också experimentera en del under det här projektet varför en lösning som är godkänd skarpt kanske inte hinner ordnas inom tidsramen för projektet.

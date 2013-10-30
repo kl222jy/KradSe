@@ -1,0 +1,97 @@
+html
+{
+    height: 100%;
+}
+@media screen and (min-width: 321px)
+{
+    body
+    {
+        height: 100%;
+        background: url('../img/bg1.svg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+#container
+{
+    min-height: 100%;
+}
+main
+{
+    @include column(12);
+    border-radius: 25px;
+}
+
+#container
+{
+    max-width: 1200px;
+    margin: auto;
+}
+
+#site-header
+{
+    padding-top: 9%;
+}
+.align-left
+{
+    float: left;
+    padding: 5px;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+address
+{
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 899px)
+{
+    article
+    {
+        clear: left;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    section.porfolio-gallery
+    {
+        @include column(12);
+    }
+    main>article 
+    { 
+        @include column(6);
+    }
+    .portfolio-gallery article
+    {
+        @include column(6);
+    }
+    #site-header, main, footer
+    {
+        @include column(12);
+    }
+    #products, #descriptions, #about-company, #about-members
+    {
+        @include column(6);
+    }
+    .persondescription
+    {
+        clear: left;
+    }
+    
+}
+
+@media screen and (min-width: 1400px)
+{
+    #site-header
+    {
+        padding-top: 0;
+        height: 125px;
+    }
+}
