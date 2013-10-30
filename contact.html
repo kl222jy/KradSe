@@ -39,20 +39,23 @@
                 </header>
                 <section>
                     <p>Om ni har frågor eller funderingar; tveka inte att kontakta oss.</p>
-                    <form role="form">
+                    <form role="form" action="send.php" method="post">
                         <fieldset>
                             <legend>Meddelande</legend>
                             <label for="contactInputName">Namn: </label>
-                            <input id="contactInputName" placeholder="Skriv in ditt namn" type="text" required pattern="[a-zåäöA-ZÅÄÖ0-9 ]+" />
+                            <input name="contactInputName" id="contactInputName" placeholder="Skriv in ditt namn" type="text" required pattern="[a-zåäöA-ZÅÄÖ0-9 ]+" />
 
                             <label for="contactInputMail">E-post: </label>
-                            <input type="email" id="contactInputMail" placeholder="Skriv in din e-post" required />
+                            <input name="contactInputMail" type="email" id="contactInputMail" placeholder="Skriv in din e-post" required />
 
+                            <label class="skraeppost" for="contactInputUrl">Detta fält är ett försök att minska skräppost utan captcha och döljs normalt sett, lämna det tomt: </label>
+                            <input name="contactInputUrl" class="skraeppost" type="url" id="contactInputUrl" placeholder="Lämna detta fält tomt, annars skickas inte meddelandet." />
+                            
                             <label for="contactInputSubject">Ämne: </label>
-                            <input type="text" id="contactInputSubject" placeholder="Skriv in ämne" required pattern="[a-zåäöA-ZÅÄÖ0-9 ]+" />
+                            <input name="contactInputSubject" type="text" id="contactInputSubject" placeholder="Skriv in ämne" required pattern="[a-zåäöA-ZÅÄÖ0-9 ]+" />
 
                             <label for="contactInputMessage">Meddelande: </label>
-                            <textarea id="contactInputMessage" required></textarea>
+                            <textarea name="contactInputMessage" id="contactInputMessage" required></textarea>
 
                             <button type="submit">Skicka</button>
                         </fieldset>
