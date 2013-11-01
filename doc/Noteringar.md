@@ -86,7 +86,9 @@ Löst problemet med visning av aktiv sida, gått igenom listan med tillgängligh
 ######ons:
 bearbetat innehåll och konverterat layout till semantic.gs
 ######tors:
+Lät en god vän kika på sidan och åtgärdade lite detaljer hon påpekade, lade upp sidan på krad.se
 ######fre:
+Läst på en del om seo, mikrodata och mikroformat, ändrat html-filerna en del baserat på detta. Lade till id för google analytics, tidigare bortglömt, uppdaterat krad.se
 ######lör:
 ######sön:
 

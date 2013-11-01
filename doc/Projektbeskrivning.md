@@ -7,7 +7,7 @@ Projektmedlemmar:  [kl222yy](https://github.com/kl222jy)
 ## Beskrivning av projektet
 Företaget erbjuder produktion av webbplatser främst riktade till mindre företag, webbplatsen ska vara ett lockande exempel och beskriva vad vi erbjuder och vad vi kan åstadkomma.
 Anledningen är att den existerande webbplatsen är väldigt föråldrad, inte följer några standarder och är allmänt dålig.
-Jag fick idén om att göra om en befintlig webbplats i princip direkt när jag såg att vi fick relativt fria händer i detta projekt, sedan föll valet på den egna webbplatsen på grund av dess dåliga skick.
+Jag fick idén att göra om en befintlig webbplats i princip direkt när jag såg att vi fick relativt fria händer i detta projekt, sedan föll valet på den egna webbplatsen på grund av dess dåliga skick.
 
 
 Webbplatsen behöver en total genomgång; innehåll behöver skrivas om, ingen kod kommer behållas och även bildmaterial är i behov av en del arbete.

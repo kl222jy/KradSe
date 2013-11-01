@@ -5,12 +5,16 @@
 }
 .persondescription dt
 {
-    font-weight: 1000;
     float: left;
     clear: left;
 }
 .persondescription dd
 {
     margin: 0;
+    margin-left: 5px;
     float: left;
+}
+dt
+{
+    font-style: italic;
 }

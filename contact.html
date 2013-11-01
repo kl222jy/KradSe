@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="sv"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="sv"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="sv"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="sv"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sv" xmlns:og="http://ogp.me/ns# xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,18 +13,32 @@
         <link rel="canonical" href="http://www.krad.se/contact.html">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <script src="js/head.js"></script>
+        <meta property="og:title" content="Krad Solutions - Webbutveckling; vi hjälper dig med din företagsprofil på webben (2013)" />
+        <meta property="og:type" content="company" />
+        <meta property="og:url" content="http://krad.se" />
+        <meta property="og:image" content="http://krad.se/img/portfolio/kradlogo.png" />
+        <meta property="og:site_name" content="Krad Solutions" />
+        <meta property="og:fb:admins" content="Kristoffer Lind" />
+        <meta property="og:description" content="Vi ser till att ditt företag får en bra närvaro på webben; till ett lågt pris. Vi kan också lösa produktion av mer avancerade lösningar om så önskas. Kom igång redan idag, kontakta oss." />
+        <meta property="og:street-address" content="Björkhällsvägen 16" />
+        <meta property="og:locality" content="Höör" />
+        <meta property="og:region" content="Skåne" />
+        <meta property="og:postal-code" content="24336" />
+        <meta property="og:country-name" content="Sverige" />
+        <meta property="og:email" content="info@krad.se" />
+        <meta property="og:phone_number" content="+46709649688" />
     </head>
-    <body>
+    <body itemscope itemtype="http://schema.org/ContactPage">
         <!--[if lt IE 9]>
             <p class="browsehappy">Du använder en <strong>föråldrad</strong> webbläsare. Vi rekommenderar att du <a href="http://browsehappy.com/">uppdaterar</a> för att förbättra din upplevelse och säkerhet.</p>
         <![endif]-->
         <div id="container">
-        <header id="site-header">
-            <h1>Krad Solutions</h1>
+        <header id="site-header" role="banner">
+            <h1 itemprop="creator" itemtype="http://schema.org/Corporation">Krad Solutions</h1>
         </header>
-        <nav id="mainMenu">
+        <nav id="mainMenu" role="navigation">
             <ul>
-                <li><a href="index.html">Start</a></li>
+                <li><a rel="home" href="index.html">Start</a></li>
                 <li><a href="products.html">Tjänster</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">Om oss</a></li>
@@ -32,7 +46,7 @@
             </ul>
         </nav>
 
-        <main id="mainContent">
+        <main id="mainContent" role="main">
             <article>
                 <header>
                 <h2>Kontakta oss</h2>
@@ -67,11 +81,12 @@
                     <h2>Kontaktinformation</h2>
                 </header>
                 <section>
+                    <a itemprop="url" href="http://krad.se"><img itemprop="logo" src="http://krad.se/img/portfolio/kradlogo.png" width="150" alt="Logotypen för Krad Solutions, texten krad med versala halva bokstäver" /></a>
                     <address itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <div itemprop="name">Krad Solutions</div>
                         <div itemprop="streetAddress">Björkhällsvägen 16</div>
-                        <div itemprop="postalCode">24336</div>
-                        <div itemprop="addressLocality">Höör</div>
+                        <span itemprop="postalCode">24336</span>
+                        <span itemprop="addressLocality">Höör</span>
                         <div itemprop="email">info@krad.se</div>
                     </address>
                     <address itemprop="founder" itemscope itemtype="http://schema.org/Person">
@@ -90,7 +105,7 @@
             </article>
         </main>
         
-        <footer>
+        <footer role="contentinfo">
             Krad Solutions &copy; 2013
         </footer>
         </div>
@@ -107,7 +122,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-45313648-1');ga('send','pageview');
         </script>
     </body>
 </html>

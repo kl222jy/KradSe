@@ -2,7 +2,7 @@ html
 {
     height: 100%;
 }
-@media screen and (min-width: 321px)
+@media screen and (min-width: 361px)
 {
     body
     {
@@ -22,6 +22,7 @@ main
 {
     @include column(12);
     border-radius: 25px;
+    padding-bottom: 10px;
 }
 
 #container
@@ -48,6 +49,11 @@ img
 address
 {
     margin-bottom: 40px;
+}
+
+.portfolio-gallery h2
+{
+    margin-left: 10px;
 }
 @media screen and (max-width: 899px)
 {
@@ -84,6 +90,7 @@ address
     {
         clear: left;
     }
+
     
 }
 
