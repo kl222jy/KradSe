@@ -90,11 +90,15 @@ Lät en god vän kika på sidan och åtgärdade lite detaljer hon påpekade, lad
 ######fre:
 Läst på en del om seo, mikrodata och mikroformat, ändrat html-filerna en del baserat på detta. Lade till id för google analytics, tidigare bortglömt, uppdaterat krad.se
 ######lör:
+ledig
 ######sön:
+ledig
 
 #####v45
 ######mån:
+tittade på allt exempelmaterial, skapade presentationen
 ######tis:
+tränat på presentationen, ändrat lite detaljer, fixat ett fel med error 404 sidan
 ######ons:
 
 
